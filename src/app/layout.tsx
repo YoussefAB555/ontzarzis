@@ -1,9 +1,10 @@
-git import type { Metadata } from "next";
+import type { Metadata } from "next";
 import "./globals.css";
+import React from "react";
 
 export const metadata: Metadata = {
-  title: "Station de Radio & Tï¿½lï¿½-diffusion de Zarzis",
-  description: "Site rï¿½gional ï¿½ informations publiques et espace de gestion (ï¿½quipements, interventions, planning).",
+  title: "Station de Radio & TÃ¯Â¿Â½lÃ¯Â¿Â½-diffusion de Zarzis",
+  description: "Site rÃ¯Â¿Â½gional Ã¯Â¿Â½ informations publiques et espace de gestion (Ã¯Â¿Â½quipements, interventions, planning).",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -12,12 +13,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-dvh bg-white text-gray-900 antialiased">
         <header className="border-b">
           <div className="container flex items-center justify-between py-4">
-            <a href="/" className="font-semibold">ONT ï¿½ Station Zarzis</a>
+            <a href="/" className="font-semibold">ONT Ã¯Â¿Â½ Station Zarzis</a>
             <nav className="flex gap-4 text-sm">
               <a href="/station">La station</a>
-              <a href="/frequences">Frï¿½quences</a>
+              <a href="/frequences">FrÃ¯Â¿Â½quences</a>
               <a href="/services">Services</a>
-              <a href="/actualites">Actualitï¿½s</a>
+              <a href="/actualites">ActualitÃ¯Â¿Â½s</a>
               <a href="/contact">Contact</a>
             </nav>
           </div>
@@ -25,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="container py-10">{children}</main>
         <footer className="border-t">
           <div className="container py-6 text-sm text-gray-600">
-            ï¿½ {new Date().getFullYear()} ONT ï¿½ Station Zarzis
+            Ã¯Â¿Â½ {new Date().getFullYear()} ONT Ã¯Â¿Â½ Station Zarzis
           </div>
         </footer>
       </body>

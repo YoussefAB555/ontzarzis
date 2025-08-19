@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Réglages rapides */
+/* RÃ©glages rapides */
 :root { color-scheme: light; }
 html, body { height: 100%; }
 .container { @apply mx-auto max-w-6xl px-4; }
